@@ -1,0 +1,42 @@
+<main class="container home"> <!-- everything -->
+  <div class="row home-header"> <!-- focusing on the row that is our header -->
+    <div class="col-md-1 mr-auto"> <!-- breaking the header in three columns (.mr-auto to force sibling columns away from one another) -->
+      <button class="btn btn-primary mr-auto">New</button>
+    </div>
+    <div class="col-md-4">
+      <h3 class="text-center">Projects</h3>
+    </div>
+    <div class="col-md-1 ml-auto"> <!-- ml-auto sends content to the right of the screen -->
+      <button class="btn ml-auto">...</button>
+    </div>
+  </div>
+
+  <!-- mr-auto and ml-auto are bootstrapper helper classes to achieve auto margin-right or auto margin-left, which is what pushes them away from the center column -->
+
+  <div class="row home-projects"> <!-- each div col-md-4 is a new project box -->
+    <div class="col-md-4 project-col"> <!-- each project-col identifies the column of the card -->
+      <a href="#" class="project-card"> <!-- each project-card identifies what is within the card and put it this way, the entire card is a link -->
+        <h4>Dummy Project</h4>
+        <p>What a wonderful project this will be!</p>
+      </a>
+    </div>
+    <div class="col-md-4 project-col">
+      <a href="#" class="project-card">
+        <h4>Wonderful Project</h4>
+        <p>This will be the most wonderful project</p>
+      </a>
+    </div>
+    <div class="col-md-4 project-col">
+      <a href="#" class="project-card">
+        <h4>Yet another project?</h4>
+        <p>Busy, busy!</p>
+      </a>
+    </div>
+    <div class="col-md-4 project-col">
+      <a href="#" class="project-card">
+        <h4>Lucky fourth project</h4>
+        <p>There has never been a luckier project than this one</p>
+      </a>
+    </div>
+  </div>
+</main>
