@@ -1,7 +1,14 @@
 <main class="container home"> <!-- everything -->
   <div class="row home-header"> <!-- focusing on the row that is our header -->
     <div class="col-md-1 mr-auto"> <!-- breaking the header in three columns (.mr-auto to force sibling columns away from one another) -->
-      <button class="btn btn-primary mr-auto">New</button>
+      <button id="new-project-button" class="btn btn-primary mr-auto">New</button>
+      <div id="new-project-popover" class="project-popover is-hidden"> <!-- where we start the statip popover -->
+        <div class="form-group">
+          <input type="text" placeholder="Name this project" class="form-control"> <!-- Input text field -->
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <button id="cancel-project-popover" class="btn btn-secondary">Cancel</button>
+      </div>
     </div>
     <div class="col-md-4">
       <h3 class="text-center">Projects</h3>
